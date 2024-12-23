@@ -26,7 +26,7 @@ namespace Svg.Avalonia.Sample.ViewModels
             {
                 yield return new IconifyExt
                 {
-                    Name = item.Name.Split(':')[1],
+                    Name = item.Name,
                     Data = new SvgDrawing
                     {
                         Content = item.SvgContent

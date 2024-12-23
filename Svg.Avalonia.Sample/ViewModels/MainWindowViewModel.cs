@@ -25,7 +25,7 @@ namespace Svg.Avalonia.Sample.ViewModels
             .ObserveOn(RxApp.MainThreadScheduler)
             .Subscribe(Search!);
 
-            _iconify = new IconifyViewModel(Path.Combine(Environment.CurrentDirectory, "Svg.Avalonia.Sample", @"D:\SVGLogos.db"));
+            _iconify = new IconifyViewModel("Resources/SVGLogos.db");
             SvgLocadAsync();
         }
 
